@@ -1,0 +1,135 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int score = 0;//Declaring the variables with the score, the character
+which the user will answer and the extra credit question that will be am
+integer.
+char answer;
+int extra_credit_answer;
+cout << "Who is the President of the United States?" << endl;
+cout << "A. Joe Biden, B. Manuel Lopez Obrador, C. George Washington,
+D. Cristiano Ronaldo" << endl;
+cin >> answer;//User will input the answer and while it is a capital
+letter, it will allow it, if it is not it tells them to redo it again.
+while (answer < 65 || answer > 68){
+cout << "Please input again! (Wrong letter and or size or
+number used.)" << endl;
+cout << "Who is the President of the United States?" << endl;
+cout << "A. Joe Biden, B. Manuel Lopez Obrador, C. George
+Washington, D. Cristiano Ronaldo" << endl;
+cin >> answer;}
+if (answer == 'A'){
+cout << "Correct!" << endl;
+score ++; //If its correct, it will add points, if not nothing will
+happen.
+}
+else{
+cout << "Wrong!" << endl;
+}
+cout << "Who is the President of Mexico?" << endl;//Same code as the
+previous until question 5.
+cout << "A. Joe Biden, B. Manuel Lopez Obrador, C. George Washington,
+D. Cristiano Ronaldo" << endl;
+cin >> answer;
+while (answer < 65 || answer > 68){
+cout << "Please input again! (Wrong letter and or size or
+number used.)" << endl;
+cout << "Who is the President of Mexico?" << endl;
+cout << "A. Joe Biden, B. Manuel Lopez Obrador, C. George
+Washington, D. Cristiano Ronaldo" << endl;
+cin >> answer;}
+if (answer == 'B'){
+cout << "Correct!" << endl;
+score++;
+}
+else{
+cout << "Wrong!" << endl;
+}cout << "Who was the first President of the United States?" << endl;
+cout << "A. Joe Biden, B. Manuel Lopez Obrador, C. George Washington,
+D. Cristiano Ronaldo" << endl;
+cin >> answer;
+while (answer < 65 || answer > 68){
+cout << "Please input again! (Wrong letter and or size or
+number used.)" << endl;
+cout << "Who was the first President of the United States?" <<
+endl;
+cout << "A. Joe Biden, B. Manuel Lopez Obrador, C. George
+Washington, D. Cristiano Ronaldo" << endl;
+cin >> answer;}
+if (answer == 'C'){
+cout << "Correct!" << endl;
+score++;
+}
+else{
+cout << "Wrong!" << endl;
+}
+cout << "Who is the best Football (Soccer, US) player in the world?" <<
+endl;
+cout << "A. Joe Biden, B. Manuel Lopez Obrador, C. George Washington,
+D. Cristiano Ronaldo" << endl;
+cin >> answer;
+while (answer < 65 || answer > 68){
+cout << "Please input again! (Wrong letter and or size or
+number used.)" << endl;
+cout << "Who is the best Football (Soccer, US) player in the
+world?" << endl;
+cout << "A. Joe Biden, B. Manuel Lopez Obrador, C. George
+Washington, D. Cristiano Ronaldo" << endl;
+cin >> answer;}
+if (answer == 'D'){
+cout << "Correct!" << endl;
+score++;
+}
+else{
+cout << "Wrong!" << endl;
+}
+cout << "Extra Credit: What is 11 x 11 - 2022? (Use numbers, or you
+won't get the point!)" << endl;
+cin >> extra_credit_answer;
+if (extra_credit_answer == -1901){ //If the integer is -1901
+because it should be, it shall add 1 more point, if not, then nothing will
+happen.
+cout << "Correct!" << endl;
+score++;
+}
+else
+{
+cout << "Wrong!" << endl;
+}
+if (score == 5){
+cout << "/////////////////////" << endl;
+cout << "Your score is a: " << score << "/4!" << endl;
+cout << "/////////////////////" << endl;
+cout << "You got a 125%! Extra credit has been awarded!" << endl;}
+//The result shall be sent to the user. (The math didn't work for some
+reason, so I manually put it.)
+else if (score == 4){
+cout << "/////////////////////" << endl;
+cout << "Your score is a: " << score << "/4!" << endl;
+cout << "/////////////////////" << endl;
+cout << "You got a 100%! Excellent!" << endl;}
+else if (score == 3){
+cout << "/////////////////////" << endl;
+cout << "Your score is a: " << score << "/4!" << endl;
+cout << "/////////////////////" << endl;;
+cout << "You got a 75%! Almost there!" << endl;}
+else if (score == 2){
+cout << "/////////////////////" << endl;
+cout << "Your score is a: " << score << "/4!" << endl;
+cout << "/////////////////////" << endl;
+cout << "You got a 50%! Halfway Through!" << endl;}
+else if (score == 1){
+cout << "/////////////////////" << endl;
+cout << "Your score is a: " << score << "/4!" << endl;
+cout << "/////////////////////" << endl;
+cout << "You got a 25%! You should know better." << endl;}
+else if (score == 0){
+cout << "/////////////////////" << endl;
+cout << "Your score is a: " << score << "/4!" << endl;
+cout << "/////////////////////" << endl;
+cout << "You got a 0%! You are a failure to me..." << endl;}
+return 0;
+}
+Test Case Input Outcome
+1 A, B, C, D, -1
